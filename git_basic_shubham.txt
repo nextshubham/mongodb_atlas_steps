@@ -1,0 +1,114 @@
+1.Create account and create repo(for specific project) over there.
+2.Install git software git-scm in your machine
+
+commands:-
+set user email and name for folder(setting the flags):
+>git config --global user.email "nextshubham@gmail.com"
+>git config --global user.name "nextshubham"
+
+right now the project is not a git project to convert it into a git project we need to run a command.
+
+>git init
+
+now a hidden folder named  .git is created.
+
+now we need to set the file to stagging area which we want to upload to git ,for that we run a command to check the status of files .
+
+>git status
+
+now you may see untracked files here if you want to track them (upload them) you need to add them to git stagging area for that there is a command.
+
+>git add .
+(dot for all files or you can mention file name you can copy and paste the file name froom there) or git add -A will also work for all.
+
+Now all files which you mentioned are in green means tracked.
+
+now you need to take snapshot of files which means you can save upto a stage at local and can go back to that stage you also need to mention the message also.
+
+> git commit -m "index.html and style.css added"
+
+
+upto here everthing is local we are doing now we need to upload over code to github hosting.
+
+
+now we need to link local repo to github hosting,you can get the repo link from github website.
+
+>git remote add origin https://github.com/nextshubham/ebay.git
+
+now we are linked with our online github hosting
+so we need to push our code to it.
+
+>git push origin master
+
+(First time it will ask password)
+
+now all the files are uploaded on github hosting
+
+now just suppose one of the developer need that files than what he will do he will run this command .
+>git clone https://github.com/nextshubham/ebay.git
+
+he will get all the files which are present.
+
+now suppose you created a new file and now run git status once again it will show that file is untraced.
+
+now add that file 
+>git add .
+
+now you need to take snapshot
+>git commit -m "adding index.js"
+
+now connection is already there we just need to push once again.
+>git push origin master
+
+now that other guy also need that update file so he will run
+>git pull origin master 
+
+in the same folder so will get that updated code.
+
+............................................
+How to create the branch from master
+>git branch
+
+willl tell you in which branch you are present right now.
+
+now to create a branch we need to give branch name.
+
+>git branch ebay-brannch
+
+now branch is created but you need to switch to that branch
+
+>git checkout ebay-brannch
+
+now you are in ebay-brannch branch
+
+now create a new file in ebay-brannch 
+
+now check status it will show one file is untracked so we need to track it through
+
+>git add .
+
+now we need to commit again
+
+>$ git commit -m "first commit in new branch"
+
+>git push origin ebay-brannch
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
