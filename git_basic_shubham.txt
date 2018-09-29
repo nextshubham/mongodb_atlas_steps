@@ -1,3 +1,5 @@
+
+Basic git commands:
 1.Create account and create repo(for specific project) over there.
 2.Install git software git-scm in your machine
 
