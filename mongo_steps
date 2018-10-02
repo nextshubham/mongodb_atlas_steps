@@ -1,0 +1,57 @@
+1.Create a account in mongodb atlas.
+
+https://cloud.mongodb.com/user?nds=true#/atlas/register/accountProfile
+
+Account:
+email:cayoril@bit2tube.com
+password:Hello@123
+
+2.Create New Cluster:
+In this page click on create cluster
+
+3.select captcha images
+
+4.It will take some time to setup cluster it is a automatic process so wait for it for 30 min .
+
+5.During the above period setup your ip(whitelist your ip):
+(a)click on add ip address,
+(b)click on allow access from anywhere:
+so white list entry will be : 0.0.0.0/0 confirm it.
+
+6.now create mongodb user from security tab,do not give special charter in password.
+give user name and password>give him permissions>click on add user.
+
+7.if your cluster is ready click on collections 
+>create database
+>assign db name and collection  name
+>click on create
+>click on insert document create a user object.
+{
+userName:"admin",
+passowrd:"admin",
+role:"admin"
+}
+>click on insert
+
+8.now users is visible in database.
+>click on cluster in sidebar
+>click on connect
+>click on Connect with the Mongo Shell
+>Connect via the Mongo Shell
+>copy the link and paste it cmd.
+>paste link and enter
+>enter password when asked.
+
+9.perform mongodb operation.
+
+............
+for nodejs application copy connnection string from
+connect option>connect your application>i am using drivver 3.6 later copy the code and use it nodejs db connection.
+
+
+
+
+
+
+
+
